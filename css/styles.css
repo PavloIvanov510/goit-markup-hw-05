@@ -8,6 +8,7 @@
   --color-F5F4FA-: #f5f4fa;
   --color-border: #afb1b8;
   --color-customers: #afb1b8;
+  --color-bg-thumb: #37a0f4;
 }
 .body {
   font-family: "Roboto", sans-serif;
@@ -552,14 +553,45 @@ img {
 .portfolio .portfolio-link {
   text-decoration: none;
 }
-.port-link-add {
+.portfolio-thumb {
   position: relative;
 }
-.link-add-text {
-  display: block;
+
+.thumb-info {
+  display: flex;
   position: absolute;
-  outline: 1px solid tomato;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+
+  /* outline: 1px solid tomato; */
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
 }
+.thumb-info:hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+
+  transition: cubic-bezier 250ms (0.4, 0, 0.2, 1);
+
+  /* outline: 1px solid tomato; */
+  padding: 63px 24px;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+  background-color: rgba(33, 150, 243, 0.9);
+}
+
 .portfolio .portfolio-title {
   /* margin-top: 20px; */
   margin-left: 20px;
