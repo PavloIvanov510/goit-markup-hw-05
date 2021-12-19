@@ -53,7 +53,20 @@
             <section class="hero-studio hero-bgimage">
                 <div class="container nav-studio">
                     <h1 class="caption-studio">Эффективные решения <br> для вашого бизнеса</h1>
-                    <button type="button" class="btn-studio">Заказать услугу</button>
+                    <button type="button" class="btn-studio" data-modal-open>Заказать услугу</button>
+                    <!-- modal-waindows -->
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <button type="button" class="modal-btn" data-modal-close>
+                                <svg class="modal-btn-svg">
+                                    <use href="./images/icons.svg#icon-close-black"></use>
+                                </svg>
+                            </button>
+                            <p>
+                            </p>
+                        </div>
+                        
+                    </div>
                 </div>
             </section>
             <!-- features-studio-->
@@ -112,13 +125,28 @@
                     <h2 class="photo-title">Чем мы занимаемся</h2>
                     <ul class="photo-list">
                         <li class="item">
-                            <img src="./images/computerhw1.jpg" alt="computer" width="370" />
+                            <div class="photo-block" width="370">
+                                <img src="./images/computerhw1.jpg" alt="computer" width="370" height="270" />
+                                <div class="bottom-block">
+                                    <p class="block-text">Десктопные приложения</p>
+                                </div>
+                            </div>
                         </li>
                         <li class="item">
-                            <img src="./images/phonehw1.jpg" alt="phone" width="370" />
+                            <div class="photo-block" width="370">
+                                <img src="./images/phonehw1.jpg" alt="computer" width="370" height="270" />
+                                <div class="bottom-block">
+                                    <p class="block-text">Мобильные приложения</p>
+                                </div>
+                            </div>
                         </li>
                         <li class="item">
-                            <img src="./images/tablethw1.jpg" alt="tablet" width="370" />
+                            <div class="photo-block" width="370">   
+                            <img src="./images/tablethw1.jpg" alt="computer" width="370" height="270" />
+                                <div class="bottom-block">
+                                    <p class="block-text">Дизайнерские решения</p>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -379,5 +407,6 @@
                 </div>
             </div>
         </footer>
+        <script src="./js/modal.js"></script>
     </body>
 </html>
