@@ -700,6 +700,7 @@ img {
 
   transition: transform 250ms var(--time-delay);
 }
+/* width="370" */
 .modal-btn {
   display: flex;
 
